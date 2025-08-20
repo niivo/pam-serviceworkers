@@ -5,13 +5,13 @@ self.addEventListener("install", (event) =>{
             "index.html", 
             "manifest.json",
             "script.js", 
-            "sw.js"]);
-    });
-});
-self.addEventListener("fetch", (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response)=>{
-            return response || fetch(event.request);
+            "sw.js"])
         });
-    );
-});
+        });
+            self.addEventListener("fetch", (event) => {
+                event.respondWith(
+                    caches.match(event.request).then((response)=>{
+                        return response || fetch(event.request);
+                    })
+                )
+            })
