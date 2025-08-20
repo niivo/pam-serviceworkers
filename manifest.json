@@ -1,6 +1,6 @@
 {
-    "name": "App foda de tarefas",
-    "short_name":"tarefas",
+    "name": "Gatos miau miau",
+    "short_name":"Gatos",
     "start_url": "index.html",
     "display": "standalone",
     "icons":[
