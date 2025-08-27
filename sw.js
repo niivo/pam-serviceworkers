@@ -5,7 +5,12 @@ self.addEventListener("install", (event) =>{
             "index.html", 
             "manifest.json",
             "script.js", 
-            "sw.js"])
+            "sw.js",
+            "style.css",
+            "icons/ic_launcher.png",
+            "icons/playstore.png",
+            "images/gatoolho.jpg",
+        ])
         });
         });
             self.addEventListener("fetch", (event) => {
