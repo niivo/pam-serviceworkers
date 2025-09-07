@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade</title>
     <link rel="manifest" href="manifest.json">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Estaodiolhoemnois da Silva</h1>
-    <img class="gato" src="images/gatoolho.jpg" alt="gatojulgando">
+     <img id="title" src="images/titulo.gif" alt="">
+    <div>
+        <label for="totalAulas"><h3>Total de Aulas:</h3></label>
+        <input type="number" id="totalAulas">
+    </div>
+    <div>
+        <label for="totalFaltas"><h3>Total de Faltas:</h3></label>
+        <input type="number" id="totalFaltas">
+    </div>
+    <button onclick="calcular()">Calcular Frequência</button>
+
+    <div id="resultado">
+    <p id="mensagem"></p>
+    <img id="imgJoia" src="images/joia.jpg" alt="Joia">
+    <img id="imgDedo" src="images/dedo.gif" alt="Melhorar">
+  </div>
+
 </body>
 </html>

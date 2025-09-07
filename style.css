@@ -3,7 +3,11 @@ body{
     font-family: 'Courier New', Courier, monospace;
     
 }
-img{
-    width: 700px;
-    height: auto;
-}
+.imgJoia, .imgDedo {
+      display: none; /* Oculta por padrão */
+      width: 120px;
+      margin-top: 10px;
+    }
+.title{
+    height: 200px;
+}   

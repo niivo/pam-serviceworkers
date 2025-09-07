@@ -1,3 +1,4 @@
+//sw
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("sw.js")
     .then((registration)=>{
@@ -6,4 +7,29 @@ if ("serviceWorker" in navigator) {
     .catch((error)=>{
         console.log("Error trying register Service Worker", error)
     });    
+}
+
+//js
+function calcular() {
+            
+    const totalAulas = Number(document.getElementById('totalAulas').value);
+    const totalFaltas = Number(document.getElementById('totalFaltas').value);
+    const msgElem = document.getElementById('mensagem');
+    const imgJoia = document.getElementById('imgJoia');
+    const imgMelhorar = document.getElementById('imgDedo');
+
+
+    // Calcular frequência
+    const frequencia = ((totalAulas - totalFaltas) / totalAulas) * 100;
+
+    if (frequencia >= 85) {
+    msgElem.textContent = 'Joia';
+    imgJoia.style.display = 'block';
+    imgMelhorar.style.display = 'none';
+  } else {
+    msgElem.textContent = 'Vamo melhorar isso ae paizão';
+    imgJoia.style.display = 'none';
+    imgMelhorar.style.display = 'block';
+  
+    }
 }

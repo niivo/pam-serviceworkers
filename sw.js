@@ -10,6 +10,9 @@ self.addEventListener("install", (event) =>{
             "icons/ic_launcher.png",
             "icons/playstore.png",
             "images/gatoolho.jpg",
+            "images/dedo.gif",
+            "images/joia.jpg",
+            "images/titulo.gif"
         ])
         });
         });
