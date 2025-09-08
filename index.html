@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,32 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-     <img id="title" src="images/titulo.gif" alt="">
-    <div>
-        <label for="totalAulas"><h3>Total de Aulas:</h3></label>
-        <input type="number" id="totalAulas">
-    </div>
-    <div>
-        <label for="totalFaltas"><h3>Total de Faltas:</h3></label>
-        <input type="number" id="totalFaltas">
-    </div>
-    <button onclick="calcular()">Calcular Frequência</button>
 
-    <div id="resultado">
-    <h3 id="mensagem"></h3>
-    <img id="imgJoia" src="images/joia.jpg" alt="Joia">
-    <img id="imgDedo" src="images/dedo.gif" alt="Melhorar">
-  </div>
+<body>
+    <div class="container">
+
+        <img id="title" src="images/titulo.gif" alt="">
+        <div>
+            <label for="totalAulas">
+                <h3>Total de Aulas:</h3>
+            </label>
+            <input type="number" id="totalAulas">
+        </div>
+        <div>
+            <label for="totalFaltas">
+                <h3>Total de Faltas:</h3>
+            </label>
+            <input type="number" id="totalFaltas">
+        </div>
+        <button onclick="calcular()">Calcular Frequência</button>
+
+        <div id="resultado">
+            <h3 id="mensagem"></h3>
+            <img id="imgJoia" src="images/joia.jpg" alt="Joia">
+            <img id="imgDedo" src="images/dedo.gif" alt="Melhorar">
+        </div>
+    </div>
 
 </body>
+
 </html>

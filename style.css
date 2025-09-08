@@ -1,13 +1,23 @@
-body{
+body {
     background-color: gray;
     font-family: 'Courier New', Courier, monospace;
-    
+
 }
-.imgJoia, .imgDedo {
-      display: none; /* Oculta por padrão */
-      width: 120px;
-      margin-top: 10px;
-    }
-.title{
+
+#imgJoia,
+#imgDedo {
+    display: none;
+    /* Oculta por padrão */
+    width: 120px;
+    margin-top: 10px;
+}
+
+.title {
     height: 200px;
-}   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
