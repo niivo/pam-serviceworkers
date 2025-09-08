@@ -23,11 +23,11 @@ function calcular() {
     const frequencia = ((totalAulas - totalFaltas) / totalAulas) * 100;
 
     if (frequencia >= 85) {
-    msgElem.textContent = 'Joia';
+    msgElem.textContent = `${frequencia.toFixed()}%, tá joia`;
     imgJoia.style.display = 'block';
     imgMelhorar.style.display = 'none';
   } else {
-    msgElem.textContent = 'Vamo melhorar isso ae paizão';
+    msgElem.textContent = `${frequencia.toFixed()}%, vamo melhorar isso ae paizão`;
     imgJoia.style.display = 'none';
     imgMelhorar.style.display = 'block';
   
