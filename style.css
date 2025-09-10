@@ -1,7 +1,13 @@
-body {
+body{
     background-color: gray;
     font-family: 'Courier New', Courier, monospace;
-
+     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
 }
 
 #imgJoia,
@@ -18,6 +24,8 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+
 }
